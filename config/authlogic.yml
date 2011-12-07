@@ -1,0 +1,27 @@
+connect:
+  # twitter:
+  #   key: "my_key"
+  #   secret: "my_secret"
+  #   label: "Twitter"
+  facebook:
+    key: "194758453928780"
+    secret: "67d0e8cb6a3469e4d4b10d0b1dd6e834"
+    label: "Facebook"
+  # google:
+  #   key: "my_key"
+  #   secret: "my_secret"
+  #   label: "Google"
+  # yahoo:
+  #   key: "my_key"
+  #   secret: "my_secret"
+  #   label: "Yahoo"
+  # myspace:
+  #   key: "my_key"
+  #   secret: "my_secret"
+  # vimeo:
+  #   key: "my_key"
+  #   secret: "my_secret"
+  # linked_in:
+  #   key: "my_key"
+  #   secret: "my_secret"
+  

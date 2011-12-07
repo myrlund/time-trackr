@@ -1,0 +1,89 @@
+$sidebar-width: 280px;
+
+body {
+  margin: 0;
+  font-family: arial;
+}
+
+#head {
+  @include clearfix;
+  background: $header-background-color;
+  padding: 1.5em 3em;
+  border-bottom: $header-border;
+  
+  section#user {
+    float: right;
+    text-align: right;
+    width: 300px;
+    background: rgba(255, 255, 255, .5);
+  }
+  
+  #logo {
+    display: block;
+    float: left;
+    margin-right: 4em;
+    font-size: 24px;
+    
+    a {
+      color: $header-color1;
+      text-decoration: none;
+    }
+  }
+  
+  nav#main {
+    float: left;
+    width: 500px;
+    
+    input {
+      width: 300px;
+      border: 1px solid #aaa;
+      padding: 3px;
+      font-size: 16px;
+    }
+    button {
+      font-size: 16px;
+      padding: 3px 1em;
+      border: 1px solid $header-color1;
+      border-radius: 2px;
+      background: $header-color1 + #333;
+      color: #fff;
+    }
+  }
+}
+
+#page {
+
+  #pageheader {
+    padding: 1.5em 3em 1.2em;
+    border-bottom: 1px solid #eee;
+    
+    .tools {
+      float: right;
+    }
+    h1 {
+      color: $header-color2;
+      font-weight: normal;
+      margin: 0;
+      /* font-size: 1.3em; */
+      
+      .description {
+        color: desaturate($header-color2 + #222, 60%);
+      }
+    }
+  }
+
+  #mainarea {
+    @include clearfix;
+    margin: 0 3em;
+  
+    #sidebar {
+      float: left;
+      width: $sidebar-width - 40px;
+      margin-right: 40px;
+    }
+    #content {
+      margin-left: $sidebar-width; // solid transparent;
+      padding: 0;
+    }
+  }
+}

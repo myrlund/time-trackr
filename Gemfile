@@ -12,6 +12,17 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+# Users and authorization
+gem 'authlogic'
+# gem 'authlogic-connect'
+gem 'cancan'
+
+gem 'formtastic'
+gem 'haml'
+gem 'carrierwave'
+gem 'stringex'
+gem 'squeel'
+
 gem 'jquery-rails'
 
 group :test do
@@ -19,4 +30,14 @@ group :test do
   gem 'turn', '~> 0.8.3', :require => false
 end
 
-gem 'nifty-generators'
+group :test, :development do
+  gem 'rspec'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'ZenTest'
+  gem 'autotest-rails'
+end
+
+gem 'faker'
+
+gem "mocha", :group => :test

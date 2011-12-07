@@ -1,0 +1,5 @@
+
+= form_for @project ? Registration.new(project: @project) : Registration.new do |f|
+  = f.text_field :project_title, :placeholder => T('projects.project'), data: {source: current_user.projects.map(&:title)} unless @project
+  = f.text_field :description, :placeholder => T('registrations.description')
+  = f.submit "Lagre"

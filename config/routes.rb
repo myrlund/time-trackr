@@ -1,4 +1,22 @@
 Trackr::Application.routes.draw do
+  
+  # Sessions
+  resource :user_session
+  match 'account/logout' => 'user_sessions#destroy', :as => :logout
+  match 'account/login' => 'user_sessions#create', :as => :login
+  
+  # Users
+  resource :account, :controller => 'users'
+  resources :users
+  
+  # Content
+  resources :projects do
+    resources :registrations
+  end
+  resources :registrations, :only => :create
+  
+  root :to => 'projects#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

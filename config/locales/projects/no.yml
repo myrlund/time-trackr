@@ -1,0 +1,6 @@
+'no':
+  projects:
+    projects: prosjekter
+    project: prosjekt
+    new: "Nytt prosjekt"
+    saved: "Prosjektet ble lagret."

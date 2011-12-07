@@ -1,0 +1,11 @@
+- title T("projects.projects")
+
+%h3 Hurtigregistrering
+= render 'registrations/form'
+
+%h2= T("projects.projects")
+%ul
+  - for project in @projects
+    %li= link_to project.title, project
+
+= tool Project, :new

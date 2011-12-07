@@ -1,3 +1,0 @@
-
-jQuery ->
-  alert "Loaded."

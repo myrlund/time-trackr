@@ -1,0 +1,46 @@
+
+$subject: "report";
+$note: "note";
+$video: "image";
+$question: "lightbulb";
+
+@mixin icon($name) {
+  &.new {
+    background-image: url(/assets/icons/#{$name}_add.png);
+  }
+}
+
+#sidebar ul, #sidebar ol {
+  padding: 0;
+  margin: .5em 0 1em;
+  list-style-type: none;
+  
+  li {
+    margin: .2em 0;
+    
+    a {
+      padding: 4px;
+      display: block;
+      
+      border: 1px solid rgba(#ddd, 0);
+      border-radius: 2px;
+
+      &:hover {
+        background-color: #eee;
+        border-color: rgba(#ddd, 1);
+      }
+    }
+    
+  }
+}
+.tool {
+  display: block;
+  background: no-repeat left center;
+  padding-left: 22px !important;
+  
+  &.subject  { @include icon($subject) };
+  &.note     { @include icon($note) };
+  &.video    { @include icon($video) };
+  &.question { @include icon($question) };
+  
+}

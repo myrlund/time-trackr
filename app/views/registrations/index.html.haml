@@ -1,0 +1,4 @@
+- title "Week view"
+
+- if @display == :week
+  #calendar{ "data-source-url" => project_registrations_path(@project, :format => :json)  }

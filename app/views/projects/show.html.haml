@@ -1,0 +1,11 @@
+- title @project.title
+
+%h3 Hurtigregistrering
+= render 'registrations/form'
+
+%p
+  = link_to "Edit", edit_project_path(@project)
+  |
+  = link_to "Destroy", @project, :confirm => 'Are you sure?', :method => :delete
+  |
+  = link_to "View All", projects_path
